@@ -1,6 +1,6 @@
 # FlagSnatcher 🏁😎
-[[License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[[Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 Snatches flags from LFI vulnerable apps. Fast. Automated. No manual `../` guessing.
 ## Why FlagSnatcher?
 I spent 2 hours manually trying `../../../../flag` on TryHackMe. Built this to never do that again.
