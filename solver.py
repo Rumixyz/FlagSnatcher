@@ -53,17 +53,13 @@ try:
 if "VGhN" in r2.text or "VEhN" in r2.text:
     try:
         decoded = base64.b64decode(r2.text.strip()).decode()
-if "THM{" in decoded:
+    if "THM{" in decoded:
             print(f"{GREEN}[+] FLAG FOUND with PHP Filter!{END}")
             print(f"{GREEN}[+] URL: {test_url2}{END}")
             print(f"{GREEN}[+] FLAG: {decoded}{END}")
             return True
-            except:
-            pass
-
-            except Exception as e:
-            pass
-
+     except:
+        pass
             print(f"{RED}[-] Tried: {path}{END}", end='\r')
 
             print(f"\n{RED}[-] Flag not found. Try increasing../ or check /etc/passwd first{END}")
