@@ -10,7 +10,7 @@ YELLOW = '\033[93m'
 END = '\033[0m'
 
 def print_banner():
-print(f"""{YELLOW}
+    print(f"""{YELLOW}
 ╔══════════════════════════════════════╗
 ║ CTF LFI AUTO SOLVER ║
 ║ Made by UZMA - For CTF Learners ║
