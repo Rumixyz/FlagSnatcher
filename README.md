@@ -33,4 +33,18 @@ For educational CTF use only. Test only on machines you have permission to attac
 
 
 ---
+## How to run
+
+python solver.py <URL> <PARAM> <PREFIX>
+
+### Example:
+python solver.py http://10.49.182.104 view dog
+
+## Run with Docker
+
+docker build -t flagsnatcher .
+docker run flagsnatcher http://10.49.182.104 view dog
+
+### For Learning Only:
+Only use on authorized CTF machines like TryHackMe.
 
